@@ -1,0 +1,160 @@
+/* ===== General ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  height: 60px;
+  width: auto;
+}
+
+/* Navbar links */
+.navbar-light .navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ff9900;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1706735733956-deebaf5d001c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero-section h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.hero-section p.lead {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+.hero-section .btn {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 60px 0;
+}
+
+section.bg-light {
+  background-color: #f8f9fa;
+}
+
+section.bg-dark {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ===== Services Images ===== */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== Why Choose / Services ===== */
+.row.align-items-center {
+  margin-bottom: 3rem;
+}
+
+.row.align-items-center h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.row.align-items-center p {
+  font-size: 1rem;
+}
+
+/* ===== Contact Form ===== */
+#contactForm input,
+#contactForm textarea {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  font-size: 1rem;
+}
+
+#contactForm button {
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Clickable contact links */
+a.text-decoration-none {
+  color: #ff9900;
+}
+
+a.text-decoration-none:hover {
+  text-decoration: underline;
+  color: #cc7a00;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #1c1c1c;
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ===== Scroll-margin for fixed navbar ===== */
+#home, #about, #services, #contact {
+  scroll-margin-top: 70px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section h3 {
+    font-size: 1.3rem;
+  }
+}
