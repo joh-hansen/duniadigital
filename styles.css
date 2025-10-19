@@ -1,160 +1,253 @@
-/* ===== General ===== */
+/* ====== GLOBAL ====== */
+:root {
+  --primary-color: #0a84ff;        /* Tech blue */
+  --primary-dark: #002e5d;
+  --accent-color: #0090ff;         /* Slightly brighter blue for hover */
+  --light-bg: #f8f9fa;
+  --dark-bg: #0f172a;
+  --text-light: #f1f5f9;
+}
+
 body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
-}
-
-/* ===== Navbar ===== */
-.navbar {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.navbar .logo {
-  height: 60px;
-  width: auto;
-}
-
-/* Navbar links */
-.navbar-light .navbar-nav .nav-link {
   color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+  background-color: var(--dark-bg) !important;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: var(--primary-color) !important;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #e5e7eb !important;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #ff9900;
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color) !important;
 }
 
-/* ===== Hero Section ===== */
+/* Navbar toggler (mobile) */
+.navbar-toggler {
+  border: 1px solid #ddd;
+}
+.navbar-toggler-icon {
+  background-image: none;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.navbar-toggler-icon::before { top: -6px; }
+.navbar-toggler-icon::after { top: 6px; }
+.navbar-toggler:hover .navbar-toggler-icon,
+.navbar-toggler:focus .navbar-toggler-icon {
+  background-color: var(--primary-color);
+}
+.navbar-toggler:hover .navbar-toggler-icon::before,
+.navbar-toggler:hover .navbar-toggler-icon::after {
+  background-color: var(--primary-color);
+}
+
+
+#works, #contact {
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)),
+    url('https://images.unsplash.com/photo-1446776653964-20c1d3a81b06?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+}
+
+
+#services {
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)),
+    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1172?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+}
+
+#about {
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)),
+    url('https://images.unsplash.com/photo-1510906594845-bc082582c8cc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1144?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+}
+/* ====== HERO SECTION ====== */
 .hero-section {
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1706735733956-deebaf5d001c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  background: linear-gradient(rgba(5, 10, 30, 0.7), rgba(5, 10, 30, 0.7)),
+    url('https://images.unsplash.com/photo-1706735733956-deebaf5d001c?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: var(--text-light);
   text-align: center;
 }
 
 .hero-section h1 {
   font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  font-weight: 700;
+  color: var(--primary-color);
 }
 
-.hero-section h3 {
-  font-size: 1.8rem;
-  margin-top: 1rem;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-
-.hero-section p.lead {
-  margin-top: 1rem;
+.hero-section p {
   font-size: 1.2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  color: #d1d5db;
 }
 
-.hero-section .btn {
-  margin-top: 2rem;
-  font-size: 1.1rem;
-  padding: 0.75rem 1.5rem;
-  font-weight: 600;
+/* ====== SERVICES / PROJECTS ====== */
+.section-title {
+  color: var(--primary-dark);
 }
 
-/* ===== Sections ===== */
-section {
-  padding: 60px 0;
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: all 0.4s ease;
 }
 
-section.bg-light {
-  background-color: #f8f9fa;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-section.bg-dark {
-  background-color: #1c1c1c;
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body h5 {
+  color: var(--primary-dark);
+}
+
+
+/* ====== TOOLS PAGE ====== */
+/* ===== Tools Hero Section ===== */
+#tools-hero {
+  position: relative;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1172")
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #fff;
 }
 
-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+#tools-hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 20, 40, 0.7); /* dark blue tech overlay */
+  z-index: 1;
 }
 
-section p {
-  font-size: 1rem;
-  color: #555;
+#tools-hero .container {
+  position: relative;
+  z-index: 2;
 }
 
-/* ===== Services Images ===== */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+#tools-hero h1 {
+  color: #00bfff; /* bright tech blue */
 }
 
-/* ===== Why Choose / Services ===== */
-.row.align-items-center {
-  margin-bottom: 3rem;
+#tools-hero p {
+  font-size: 1.2rem;
+  color: #dce6f5;
 }
 
-.row.align-items-center h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+#tools-hero .btn-primary {
+  background-color: #007bff;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.row.align-items-center p {
-  font-size: 1rem;
+#tools-hero .btn-primary:hover {
+  background-color: #00bfff;
+  transform: translateY(-2px);
 }
 
-/* ===== Contact Form ===== */
-#contactForm input,
-#contactForm textarea {
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  padding: 0.75rem;
-  font-size: 1rem;
-}
 
-#contactForm button {
-  border-radius: 5px;
-  font-weight: 600;
-}
 
-/* Clickable contact links */
-a.text-decoration-none {
-  color: #ff9900;
-}
-
-a.text-decoration-none:hover {
-  text-decoration: underline;
-  color: #cc7a00;
-}
-
-/* ===== Footer ===== */
-footer {
-  background-color: #1c1c1c;
-  color: #ccc;
-  padding: 20px 0;
+#tools h2 {
+  color: var(--primary-color);
   text-align: center;
-  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 
-/* ===== Scroll-margin for fixed navbar ===== */
-#home, #about, #services, #contact {
-  scroll-margin-top: 70px;
+#tools .card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: #e5e7eb;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .hero-section h1 {
-    font-size: 2.2rem;
-  }
-  .hero-section h3 {
-    font-size: 1.3rem;
-  }
+#tools .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+#tools .card-title {
+  color: var(--primary-color);
+}
+
+#tools .card-text {
+  color: #cbd5e1;
+}
+
+/* ====== CONTACT SECTION ====== */
+#contact a {
+  color: var(--primary-dark);
+}
+#contact a:hover {
+  color: var(--primary-color);
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: var(--dark-bg);
+  color: var(--text-light);
+}
+
+footer a {
+  color: var(--primary-color);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====== BUTTONS ====== */
+.btn-warning,
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover,
+.btn-primary:hover {
+  background-color: var(--accent-color);
 }

@@ -3,53 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dunia Digital | Web & App Solutions</title>
-
-  <!-- Bootstrap CSS -->
+  <title>Dunia Digital | Smart Tech Solutions</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" href="images/logo.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
-
-  <style>
-    html { scroll-behavior: smooth; }
-
-    /* Navbar links color */
-    .navbar-light .navbar-nav .nav-link {
-      color: #333;
-    }
-    .navbar-light .navbar-nav .nav-link:hover {
-      color: #ff9900;
-    }
-
-    /* Logo sizing */
-    .navbar .logo { height: 60px; width: auto; }
-
-    /* Hero */
-    .hero-section {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1581091870627-3b39fc252fc0?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      text-align: center;
-    }
-
-    /* Scroll-margin for fixed navbar */
-    #home, #about, #services, #contact { scroll-margin-top: 70px; }
-  </style>
 </head>
 <body>
 
   <!-- ===== Navbar ===== -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#home">
-        <img src="images/logo.png" alt="Dunia Digital Logo" class="logo">
+        <img src="images/logo.png" alt="Dunia Digital Logo" class="logo" height="50">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -57,6 +25,8 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#works">Our Works</a></li>
+          <li class="nav-item"><a class="nav-link" href="tools.html">Tools</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -64,84 +34,119 @@
   </nav>
 
   <!-- ===== Hero Section ===== -->
-  <section id="home" class="hero-section">
+  <section id="home" class="hero-section text-center text-light">
     <div class="container">
-      <h1 class="display-4 fw-bold">Dunia Digital</h1>
-      <h3 class="display-6 fw-bold">Web, App & Digital Solutions</h3>
-      <p class="lead mt-3">Helping businesses grow with modern technology, automation, and AI.</p>
-      <a href="#contact" class="btn btn-warning btn-lg mt-4">Get in Touch</a>
+      <h1 class="display-4 fw-bold">Empowering Businesses with Technology</h1>
+      <p class="lead mt-3">We design, develop, and deliver digital solutions that transform your business.</p>
+      <a href="#contact" class="btn btn-primary btn-lg mt-4">Start a Project</a>
     </div>
   </section>
 
   <!-- ===== About Section ===== -->
-  <section id="about" class="py-5 bg-light text-center">
+  <section id="about" class="py-5 bg-black text-light text-center">
     <div class="container">
-      <h2 class="fw-bold mb-4">About Dunia Digital</h2>
+      <h2 class="fw-bold mb-4">Who We Are</h2>
       <p class="lead mx-auto" style="max-width: 800px;">
-        Dunia Digital is a tech solutions company specializing in **web development, mobile applications, AI-driven automation, and digital marketing**. 
-        We help businesses transform ideas into digital solutions that improve efficiency, reach more customers, and generate results. 
-        Our goal is to make technology simple, effective, and accessible for every client.
+        Dunia Digital is a full-stack tech company helping individuals and businesses grow through web development,
+        mobile applications, AI-powered automation, and digital marketing strategies.  
+        Our mission is to simplify technology and make it work for everyone.
       </p>
     </div>
   </section>
 
-
   <!-- ===== Services Section ===== -->
-  <section id="services" class="py-5">
+  <section id="services" class="py-5 bg-dark text-light">
     <div class="container">
       <h2 class="fw-bold text-center mb-5">Our Services</h2>
-
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
           <h4 class="fw-bold">💻 Web Development</h4>
-          <p>We build modern, responsive, and scalable websites that represent your business professionally and drive results online.</p>
+          <p>We build beautiful, responsive websites that help your business grow online.</p>
         </div>
         <div class="col-md-6">
-          <!-- <img src="https://images.unsplash.com/photo-1612831455544-8e6fbd6ef06d?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="Web development"> -->
           <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="Web development">
         </div>
       </div>
-
       <div class="row align-items-center mb-5 flex-md-row-reverse">
         <div class="col-md-6">
-          <h4 class="fw-bold">📱 Mobile App Development</h4>
-          <p>Creating iOS and Android applications with clean design, performance, and functionality for your business needs.</p>
+          <h4 class="fw-bold">📱 App Development</h4>
+          <p>We develop modern mobile applications that enhance user experience and performance.</p>
         </div>
         <div class="col-md-6">
-          <!-- <img src="https://images.unsplash.com/photo-1581091012184-7e17f5b93217?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="App development"> -->
-          <img src="https://images.unsplash.com/photo-1706735733956-deebaf5d001c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="App development">
+          <img src="https://images.unsplash.com/photo-1630442923896-244dd3717b35?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="App development">
         </div>
       </div>
-
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
-          <h4 class="fw-bold">🤖 AI & Automation</h4>
-          <p>Implementing AI-driven tools and automation to streamline workflows, reduce errors, and save time for businesses.</p>
+          <h4 class="fw-bold">🤖 Automation & AI</h4>
+          <p>We integrate AI and automation tools to boost efficiency and streamline workflows.</p>
         </div>
         <div class="col-md-6">
-          <!-- <img src="https://images.unsplash.com/photo-1591696205602-08b622b382ff?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="AI automation"> -->
-          <img src="https://plus.unsplash.com/premium_photo-1682756540097-6a887bbcf9b0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1171?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="AI automation">
+          <img src="https://plus.unsplash.com/premium_photo-1682756540097-6a887bbcf9b0?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="AI automation">
         </div>
       </div>
-
       <div class="row align-items-center mb-5 flex-md-row-reverse">
         <div class="col-md-6">
           <h4 class="fw-bold">📈 Digital Marketing</h4>
-          <p>Helping you reach your audience with social media campaigns, SEO optimization, and online advertising strategies.</p>
+          <p>We design strategies and run campaigns to promote your brand effectively online.</p>
         </div>
         <div class="col-md-6">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGlnaXRhbCUyMG1hcmtldGluZyUyMHNlcnZpY2VzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="Digital marketing">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded shadow-sm" alt="Digital marketing">
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- ===== Contact Section ===== -->
-  <section id="contact" class="py-5 bg-light text-center">
+  <!-- ===== Our Works Section ===== -->
+  <section id="works" class="py-5 bg-dark text-light text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-5 text-info">Some Of Our Works</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card bg-secondary text-light border-0 h-100">
+            <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="fw-bold">EFAMU Logistics Website</h5>
+              <p>Modern responsive website built for a logistics and transport company in Tanzania.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-secondary text-light border-0 h-100">
+            <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="fw-bold">Real Estate Portal</h5>
+              <p>A full-featured property listing platform for agents and homeowners to manage postings easily.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-secondary text-light border-0 h-100">
+            <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="fw-bold">Hardware POS System</h5>
+              <p>Custom-built POS system for hardware stores — tracks inventory, sales, and reports offline.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card bg-secondary text-light border-0 h-100">
+            <img src="images/project4.jpg" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+              <h5 class="fw-bold">Salon Management System</h5>
+              <p>System for managing appointments, clients, and payments for beauty salons and barbershops.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- ===== Contact Section ===== -->
+  <section id="contact" class="py-5 bg-black text-light text-center">
     <div class="container">
       <h2 class="fw-bold mb-4">Contact Us</h2>
-      <p class="lead mb-5">Reach out to discuss your project or start a collaboration.</p>
+      <p class="lead mb-5">Have a project idea or want to collaborate? Let’s talk.</p>
 
       <div class="row justify-content-center">
         <div class="col-md-6">
@@ -155,32 +160,30 @@
             <div class="mb-3">
               <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-warning w-100">Send Message</button>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
           </form>
         </div>
-      </div>
-
-      <div class="mt-4">
-        <p><strong>Email:</strong> <a href="mailto:info@duniadigital.com" class="text-decoration-none text-dark">info@duniadigital.com</a></p>
-        <p><strong>Phone:</strong> <a href="tel:+255712345679" class="text-decoration-none text-dark">+255 712 345 679</a></p>
       </div>
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
-  <footer class="py-3 bg-dark text-light text-center">
+  <footer class="py-4 bg-dark footer-dark text-light text-center">
     <div class="container">
-      <small>© 2025 Dunia Digital</small>
+      <div class="mb-3">
+        <a href="tel:+255712345679" target="_blank" class="text-light mx-2"><i class="bi bi-telephone-fill fs-4"></i></a>
+        <a href="mailto:info@duniadigital.com" target="_blank" class="text-light mx-2"><i class="bi bi-envelope-fill fs-4"></i></a>
+        <a href="https://facebook.com/" target="_blank" class="text-light mx-2"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="https://instagram.com/" target="_blank" class="text-light mx-2"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="https://linkedin.com/" target="_blank" class="text-light mx-2"><i class="bi bi-linkedin fs-4"></i></a>
+        <a href="https://twitter.com/" target="_blank" class="text-light mx-2"><i class="bi bi-twitter-x fs-4"></i></a>
+        <a href="https://wa.me/255712345679" target="_blank" class="text-light mx-2"><i class="bi bi-whatsapp fs-4"></i></a>
+      </div>
+      <small>© 2025 Dunia Digital | All Rights Reserved</small>
     </div>
   </footer>
 
-  <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
